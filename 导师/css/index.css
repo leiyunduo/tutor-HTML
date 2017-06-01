@@ -1,0 +1,340 @@
+@import url('reset.css');
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+}
+html {
+  font-size: 62.5%;
+}
+.header {
+  width: 100%;
+  height: 4.4rem;
+  background: #ffffff;
+  border-bottom: 1px solid #c6c6c6;
+  padding: 0 10px;
+  box-sizing: border-box;
+  
+  display: flex;
+  flex-direction: row;
+}
+.header h3 {
+  font-size: 1.8rem;
+  line-height: 4.4rem;
+  flex: 1;
+  text-align: center;
+}
+.header a{
+  width: 4rem;
+  height: 1.8rem;
+  background: none;
+  margin-top: 14px;
+}
+.section {
+  flex: 1;
+  padding-bottom: 50px;
+  overflow-y: auto;
+}
+.section::-webkit-scrollbar {
+  width: 0;
+}
+.section .search {
+  width: 100%;
+  height: 5.5rem;
+  background: none;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+.section .search i {
+  width: auto;
+  height: 1.4rem;
+  background: none;
+  position: absolute;
+  top: 1.4rem;
+  left: 2rem;
+}
+.section .search input {
+  width: 100%;
+  height: 3.5rem;
+  background: #ffffff;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  color: #999999;
+  padding-left: 3.5rem;
+  border-radius: 5px;
+}
+.section .follow {
+  width: 100%;
+  height: 5.5rem;
+  background: #ffffff;
+  line-height: 5.5rem;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+/*.section .follow h3{
+  color: #333333;
+  font-size: 1.5rem;
+  flex: 1;
+}*/
+.section .follow span {
+  color: #333333;
+  font-size: 1.5rem;
+}
+.section .follow img {
+  position: absolute;
+  right: 10px;
+  top: 2rem;
+}
+.section .follow-list {
+  display: none;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.section .follow-list .list {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+}
+.section .follow-list .list dl {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 7.2rem;
+  background: none;
+  border-bottom: 1px solid #cccccc;
+  position: relative;
+}
+.section .follow-list .list dl dt img {
+  width: auto;
+  height: 4rem;
+  background: none;
+  margin-right: 1.4rem;
+  margin-top: 1.5rem;
+}
+.section .follow-list .list dl dd {
+  padding-top: 1.5rem;
+}
+.section .follow-list .list dl dd h3 {
+  font-size: 16px;
+}
+.section .follow-list .list dl dd p {
+  color: #999999;
+}
+.section .follow-list .list dl dd button {
+  position: absolute;
+  right: 0;
+  top: 2.5rem;
+  width: 6rem;
+  height: 2.4rem;
+  background: none;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  outline: none;
+}
+.section .student {
+  width: 100%;
+  height: 5.5rem;
+  background: #ffffff;
+  line-height: 5.5rem;
+  padding: 0 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+.section .student h3 {
+  color: #333333;
+  flex: 1;
+  font-size: 1.5rem;
+}
+.section .student img {
+  position: absolute;
+  right: 10px;
+  top: 2rem;
+}
+.section .volunteer {
+  width: 100%;
+  height: 3.5rem;
+  background: none;
+  line-height: 3.5rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+.section .volunteer img {
+  width: auto;
+  height: 1.6rem;
+  background: none;
+  margin: 1rem 1rem 0 0;
+}
+.section .volunteer p {
+  font-size: 1.4rem;
+  color: #666666;
+}
+.section .plan {
+  width: 100%;
+  height: 5.5rem;
+  background: #ffffff;
+  line-height: 5.5rem;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+  flex-direction: row;
+}
+.section .plan h3 {
+  color: #333333;
+  font-size: 1.5rem;
+  flex: 1;
+}
+.section .plan img {
+  position: absolute;
+  right: 10px;
+  top: 2rem;
+}
+.section .family {
+  width: 100%;
+  height: 5.5rem;
+  background: #ffffff;
+  line-height: 5.5rem;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+  flex-direction: row;
+}
+.section .family h3{
+  color: #333333;
+  font-size: 1.5rem;
+  flex: 1;
+}
+.section .family img {
+  position: absolute;
+  right: 10px;
+  top: 2rem;
+}
+.section .family-list {
+  display: none;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e4e4e4;
+}
+.section .family-list .list-me {
+  width: 100%;
+  height: 15rem;
+  background: none;
+  border-bottom: 1px solid #e4e4e4;
+}
+.section .family-list .list-me p {
+  color: #999999;
+}
+.section .family-list .list-me dl {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 7.2rem;
+  background: none;
+  position: relative;
+  margin-bottom: 1.6rem;
+}
+.section .family-list .list-me dl dt img {
+  width: auto;
+  height: 4rem;
+  background: none;
+  margin-right: 1.4rem;
+  margin-top: 2.4rem;
+}
+.section .family-list .list-me dl dd {
+  padding-top: 2.4rem;
+}
+.section .family-list .list-me dl dd h3 {
+  font-size: 16px;
+}
+.section .family-list .list-me dl dd p {
+  color: #999999;
+}
+.section .family-list .list-me dl dd button {
+  position: absolute;
+  right: 0;
+  top: 2.5rem;
+  width: 6rem;
+  height: 2.4rem;
+  background: none;
+  border: 1px solid #ff5c5c;
+  border-radius: 5px;
+  outline: none;
+  color: #ff5c5c;
+}
+.section .family-list .list-me dl dd button img {
+  width: auto;
+  height: 1rem;
+  background: none;
+  margin-right: 0.6rem;
+}
+.section .family-list .list-me dl dd span {
+  display: inline-block;
+  width: auto;
+  height: 1.4rem;
+  background: none;
+  padding: 0 0.2rem;
+  border: 1px solid #b5b5b5;
+  color: #b5b5b5;
+  margin-right: 2px;
+  border-radius: 5px;
+  margin-top: 0.8rem;
+}
+.section .family-list .click {
+  width: 100%;
+  height: 5rem;
+  background: #ffffff;
+  text-align: center;
+}
+.section .family-list .click button {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+}
+.section .family-list .click button img {
+  width: auto;
+  height: 0.5rem;
+  background: none;
+  margin-left: 10px;
+}
+.footer {
+  width: 100%;
+  height: 4.8rem;
+  background: #ffffff;
+  border-top: 1px solid #e3e3e3;
+}
+.footer ul {
+  display: flex;
+  flex-direction: row;
+}
+.footer ul li {
+  flex: 1;
+  text-align: center;
+}
+.footer ul li img {
+  width: auto;
+  height: 2.4rem;
+  background: none;
+  margin: 6px 0 4px 0;
+}
+

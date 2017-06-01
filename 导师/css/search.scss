@@ -1,0 +1,69 @@
+@import 'reset.css';
+@mixin full($w,$h,$bg){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+@mixin box($yan:column){
+    display: flex;
+    flex-direction: $yan;
+}
+@mixin font($s1,$s2,$s3,$s4,$name){
+    .#{$name}-14{font-size: $s1;}
+    .#{$name}-16{font-size: $s2;}
+    .#{$name}-18{font-size: $s3;}
+    .#{$name}-20{font-size: $s4;}
+}
+@include font(14px,16px,18px,20px,size);
+
+html,body{
+    @include full(100%,100%,#fff);
+    @include box;
+}
+html{
+    font-size: 62.5%;
+}
+
+.header{
+    @include full(100%,5.4rem,#ffffff);
+    border-bottom: 1px solid #d5d5d5;
+    @include box(row);
+    padding: 0 1rem;
+    box-sizing: border-box;
+    
+    .left{
+        img{
+            @include full(auto,1.6rem,none);
+            margin:2rem 1.8rem 0 0;
+        }
+    }
+    .right{
+        button{
+            color: #fe5658;
+            font-size: 1.6rem;
+            margin: 20px 0 0 14px;
+            border: none;
+            outline: none;
+            background: none;
+        }
+    }
+    .center{
+        flex: 1;
+        position: relative;
+        
+        img{
+            @include full(auto,1.4rem,none);
+            position: absolute;
+            top: 1.8rem;
+            left: 1rem;
+        }
+        input{
+            @include full(100%,3.3rem,#eeeeee);
+            border: none;
+            outline: none;
+            margin-top: 10px;
+            padding-left: 3.6rem;
+            border-radius: 5px;
+        }
+    }
+}

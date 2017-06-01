@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title>导师</title>
+		<link rel="stylesheet" type="text/css" href="css/search.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<div class="left">
+				<img src="img/techer_03.jpg"/>
+			</div>
+			<div class="center">
+				<img src="img/1_03.jpg"/>
+				<input type="search" placeholder="输入你要查找的导师姓名" id="keyword">
+			</div>
+			<div class="right">
+				<button>搜索</button>
+			</div>
+		</div>
+		
+		<div class="section">
+			<!--follow-list-->
+			<div class="follow-list">
+				<div class="list">
+					<dl>
+						<dt><img src="img/techer_21.jpg"/></dt>
+						<dd>
+							<h3>朱小刚</h3>
+							<p>教育专家，高考桥第一明星</p>
+						</dd>
+						<dd>
+							<button>已关注</button>
+						</dd>
+					</dl>
+				</div>				
+			</div>
+			
+			<!--family-list-->
+			<div class="family-list">
+				<div class="list-me">
+					<dl>
+						<dt><img src="img/techer_21.jpg"/></dt>
+						<dd>
+							<h3>朱小刚</h3>
+							<p>教育专家，高考桥第一明星</p>
+							<span>明星导师</span><span>签约导师</span><span>志愿专家</span><span>认证导师</span>
+						</dd>
+						<dd>
+							<button><img src="img/techer_24.jpg"/>关注</button>
+						</dd>
+					</dl>
+					<p>
+						我从事过20年高中教育，亲自目送过2万多名学生考上大学，本人擅长讲志愿方面的问题。亲自目送过2万多名学生考上大学，本人擅长讲志愿
+					</p>
+				</div>
+				<div class="list-me">
+					<dl>
+						<dt><img src="img/techer_21.jpg"/></dt>
+						<dd>
+							<h3>朱小刚</h3>
+							<p>教育专家，高考桥第一明星</p>
+							<span>明星导师</span><span>签约导师</span><span>志愿专家</span><span>认证导师</span>
+						</dd>
+						<dd>
+							<button><img src="img/techer_24.jpg"/>关注</button>
+						</dd>
+					</dl>
+					<p>
+						我从事过20年高中教育，亲自目送过2万多名学生考上大学，本人擅长讲志愿方面的问题。亲自目送过2万多名学生考上大学，本人擅长讲志愿
+					</p>
+				</div>
+				
+			</div>
+			
+			
+		</div>
+		
+		<div class="footer">
+			
+		</div>
+		
+		
+		<script src="js/jquery-3.1.1.js"></script>
+		<script type="text/javascript">
+			$("#keyword").on('keypress',function(e) {  
+	                var keycode = e.keyCode;  
+	                var searchName = $(this).val();  
+	                if(keycode=='13') {  
+	                    e.preventDefault();    
+	                    //请求搜索接口  
+//	                      alert('test');
+	                }  
+	         });  
+		</script>
+	</body>
+</html>
